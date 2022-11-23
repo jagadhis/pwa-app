@@ -17,7 +17,7 @@ function App() {
  <div style={{marginTop:"40px",justifyContent:'space-around',display:'flex',flexWrap:'wrap',width:'90%',margin:'auto'}}>
 {pokemonData?.map((poke,i)=>{
   return(
-    <div style={{width:"400px",height:"330px",border:"2px solid #000000",margin:"30px 10px"}}>
+    <div key={i} style={{width:"400px",height:"330px",border:"2px solid #000000",margin:"30px 10px"}}>
      <div style={{padding:'5px 10px'}}>
       <p style={{fontWeight:'bold',textTransform:'capitalize'}}>{poke.name}</p>
      </div>
